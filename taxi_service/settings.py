@@ -118,6 +118,11 @@ USE_TZ = True
 
 STATIC_URL = "static/"
 
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+    "/var/www/static",
+]
+
 AUTH_USER_MODEL = "taxi.Driver"
 
 # Default primary key field type
